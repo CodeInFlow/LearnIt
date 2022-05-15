@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         val expandedToolbarTitle: TextView = binding.expandedToolbarTitle
         val expandedToolbarSubtitle: TextView = binding.expandedToolbarSubtitle
         navController = findNavController(R.id.nav_host_fragment_activity_main)
+        navView.setupWithNavController(navController)
 
         val bottomNavActiveFrag = listOf(
             R.id.nav_home,
